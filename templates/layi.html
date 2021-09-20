@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes"/>
+
+        <!-- documentation at http://getbootstrap.com/docs/4.0/, alternative themes at https://bootswatch.com/4-alpha/ -->
+        
+   
+       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="/static/stylebc.css" rel="stylesheet"/>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <title>Deep Learning: {% block title %}{% endblock %}</title>
+        
+
+
+    </head>
+
+    <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark p-0 shadow">
+
+
+
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/">Deep Learning</a>
+   <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+</button>
+     <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto mt-2">
+                  
+
+
+                    <li class="nav-item"><a class="nav-link" href="/ft">BiLSTMFT model</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/wv">BiLSTMWV model</a></li>
+
+                </ul>
+          </div>
+</nav>
+
+  <div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column mr-auto mt-2">
+              <li> <a href="#" data-toggle="collapse" data-target="#dashboard" class="collapsed active" > <i class="fa fa-th-large"></i> <span class="nav-label"> Dashboards </span> <span class="fa fa-chevron-left pull-right"></span> </a>
+              <ul class="sub-menu collapse" id="dashboard">
+                <li class="active"><a href="#">CSS3 Animation</a></li>
+                <li><a href="#">General</a></li>
+                <li><a href="#">Buttons</a></li>
+                <li><a href="#">Tabs & Accordions</a></li>
+                <li><a href="#">Typography</a></li>
+                <li><a href="#">FontAwesome</a></li>
+                <li><a href="#">Slider</a></li>
+                <li><a href="#">Panels</a></li>
+                <li><a href="#">Widgets</a></li>
+                <li><a href="#">Bootstrap Model</a></li>
+              </ul>
+            </li>
+            <li> <a href="#"><span class="nav-label"></span>Layouts</a> </li>
+            <li> <a href="#" data-toggle="collapse" data-target="#products" class="collapsed active" > <i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span> <span class="fa fa-chevron-left pull-right"></span> </a>
+            <ul class="sub-menu collapse" id="products">
+              <li class="active"><a href="#">CSS3 Animation</a></li>
+              <li><a href="#">General</a></li>
+              <li><a href="#">Buttons</a></li>
+              <li><a href="#">Tabs & Accordions</a></li>
+              <li><a href="#">Typography</a></li>
+              <li><a href="#">FontAwesome</a></li>
+              <li><a href="#">Slider</a></li>
+              <li><a href="#">Panels</a></li>
+              <li><a href="#">Widgets</a></li>
+              <li><a href="#">Bootstrap Model</a></li>
+            </ul>
+          </li>
+          <li> <a href="#"><i class="fa fa-laptop"></i> <span class="nav-label">Grid options</span></a> </li>
+          <li> <a href="#" data-toggle="collapse" data-target="#tables" class="collapsed active" ><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span class="fa fa-chevron-left pull-right"></span></a>
+          <ul  class="sub-menu collapse" id="tables" >
+            <li><a href=""> Static Tables</a></li>
+            <li><a href=""> Data Tables</a></li>
+            <li><a href=""> Foo Tables</a></li>
+            <li><a href=""> jqGrid</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" data-toggle="collapse" data-target="#e-commerce" class="collapsed active" ><i class="fa fa-shopping-cart"></i> <span class="nav-label">E-commerce</span><span class="fa fa-chevron-left pull-right"></span></a>
+        <ul  class="sub-menu collapse" id="e-commerce" >
+          <li><a href=""> Products grid</a></li>
+          <li><a href=""> Products list</a></li>
+          <li><a href="">Product edit</a></li>
+          <li><a href=""> Product detail</a></li>
+          <li><a href="">Cart</a></li>
+          <li><a href=""> Orders</a></li>
+          <li><a href=""> Credit Card form</a> </li>
+        </ul>
+      </li>
+      <li> <a href=""><i class="fa fa-pie-chart"></i> <span class="nav-label">Metrics</span> </a></li>
+      <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span></a> </li>
+      <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span></a> </li>
+      <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span></a> </li>
+      <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span></a> </li>
+      <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span></a> </li>
+        </ul>
+  </div>
+    </nav>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="container">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+
+        <h1 class="h3">Amaharic Entailment Classification</h1>
+      </div>
+                  
+
+     {% block main %}{% endblock %}
+   
+
+         
+
+   
+
+   
+</div>
+  
+        </main>
+              </div>
+      
+      </div>
+
+    
+
+         
+    </body>
+    
+   
+</html>
+     
+            

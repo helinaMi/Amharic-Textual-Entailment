@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+{% endblock %}
+
+{% block main %}
+           <form action="/plot_url" method='post' >
+                       <div class="form-group row">
+       
+<div class="input-group form-group row col-md-7">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Enter a word</label>
+
+
+ <input type="text" class="form-control" name="sentence">
+          <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="submit">Plot PCA</button>
+  </div>
+    </div>
+                           </div>
+                  </form>   
+  
+ 
+
+     
+ <img src="data:image/png;base64,{{plot_url }}">
+
+<ul/>
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "por.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+        <div class="container">
+
+    <form action="/ft" enctype="multipart/form-data" method="post">
+        <p>Please Enter The two Sentenses which contain Premises and Hypotesis.</p>
+
+        
+                                  <div class="form-group row">
+
+        
+               <div class="col-md-10">
+                       <label for="staticEmail" class="col-sm-2 col-form-label">Premises</label>
+
+
+              <input type="text" class="form-control" name="sentencea">
+                   </div>
+                   </div>
+  {% for message in get_flashed_messages() %}
+          {% if message in get_flashed_messages() %}
+
+    <div class=flash>{{ message }}</div>
+                       {% endif %}
+
+  {% endfor %}
+                      <div class="form-group row">
+
+
+                <div class="col-md-10">
+
+       <label for="staticEmail" class="col-sm-2 col-form-label">Hypotesis</label>
+
+             <input type="text"class="form-control" name="sentenceb">
+                    </div>
+                                   
+</div>
+          {% if message in get_flashed_messages() %}
+
+    <div class=flash>{{ message }}</div>
+                       {% endif %}
+
+
+
+
+        <p>
+            <button class="btn btn-lg btn-secondary" type="submit">Evaluate</button>
+        </p>              
+       
+
+                   
+                     
+
+          {% if message in get_flashed_messages() %}
+
+    {{ message }}
+                       {% endif %}
+
+
+        <p>
+            Please be patient. classification model may take longer to process.
+        </p>
+    </form> 
+
+</div>
+{% endblock %}
+
+    © 2019 GitHub, Inc.
+    Terms

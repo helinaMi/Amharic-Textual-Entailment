@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Plot
+{% endblock %}
+
+{% block main %}
+<p class="lead">Plot for FTE model </p>
+
+<img src={{img_filename}}>
+<p> Matched Labels: <b>{{ n }}</b></p>
+<p> Mismatched Labels: <b>{{e }}</b></p>
+
+    
+{% endblock %}

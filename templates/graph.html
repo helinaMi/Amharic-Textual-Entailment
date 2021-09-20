@@ -1,0 +1,25 @@
+{% extends "result.html" %}
+
+
+
+{% block main %}
+
+                <p class=" lead text-justify">This graph is to visualize IB transaction type sum of the RFM clusters, Overall Score and Segments and to show which group of those are higher or lower.<p>
+                    <ul> Recency Clustur has four classes which ranges from 0-3 0 is higher 3 is lower</ul>
+                    <ul> Frequency Clustur has four classes which ranges from 0-3 0 is higher 3 is lower </ul>
+                    <ul> Monetery Clustur has four classes which ranges from 0-3 0 is higher 3 is lower </ul>
+                    <ul> Overall Score Clustur has 8 classess  which ranges from 0-7, the score less than two is low and the score greater than 4 is higher </ul>
+<ul> Segment Clustur has 3 classess  as the name indicates high mid and low value </ul>
+
+
+
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+ <img src="data:image/png;base64,{{ plott }}"style="width:100%;">
+
+    
+
+{% endblock %}

@@ -1,0 +1,129 @@
+{% extends "por.html" %}
+
+
+
+{% block main %}
+  <!-- ======= Breadcrumbs ======= -->
+     <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Intrinsic evaluation</h2>
+                        
+     
+         
+           
+              <nav class="nav-menu d-none d-lg-block">
+                 
+        <ul> 
+            <li><a href="/">Home</a></li>
+        
+        
+            <li class="drop-down"><a href="">Word2Vec Eval</a>
+            <ul>
+              <li ><a href="/morphemewv">Related words</a>
+                  
+                    </li>
+              <li><a href="/analogyw">Analogy r/s</a>
+             
+                    </li>
+                    <li><a href="/morphemew">Similarity Score</a></li>
+           
+               
+              <li ><a href="/simwv">Most similars</a></li>
+                <li ><a href="/disimilarwv">One odd out</a></li>
+                 <li ><a href="/wpca">PCA</a></li>
+            
+            
+         
+        </ul>
+ </li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+<section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Analogy Relationship</h2>
+           <p>Here you can Find one of intrinsic evaluation in SW and SG models of analogy relationship between the first two words and last word as to resulted word.</p>
+        </div>
+
+      
+        <div class="row">
+            
+           
+     <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
+       
+
+ <form action="/analogyw" method="post" role="form" class="form">
+              <div class="form-row">
+              
+              <div class="form-group col-md-8">
+                  <label >Enter three words</label>
+                  <input type="text" name="sentencev" class="form-control" id="sentencev" data-rule="minlen:10" data-msg="Please enter at least 10 numbers" />
+                  
+                                    <div class="validate"></div>
+
+                
+                  
+                </div>
+                       </div>
+                                           
+                  <div class="form-group-append"><button type="submit">SG Top analogy </button></div>
+
+            <div class="d-inline-flex p-2">
+
+        <div class="alert alert-success" role="alert">
+          <p>Analogy r/s for the first two words entered is as last word to the result in SG <br> <a href="#" class="alert-link">{{y}}</a></p>
+
+  </div>
+     </div>
+
+                  </form>    
+</div>
+            
+            
+               
+ <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
+
+    
+
+    
+          <form action="/analogys" method="post" role="form" class="form">
+              <div class="form-row">
+              
+              <div class="form-group col-md-8">
+                  <label >Enter three words</label>
+                  <input type="text" name="sentences" class="form-control" id="sentences" data-rule="minlen:10" data-msg="Please enter at least 10 numbers" />
+                  
+                                    <div class="validate"></div>
+
+                
+                  
+                </div>
+                       </div>
+                                           
+                  <div class="form-group-append"><button type="submit">SW Top analogy</button></div>
+
+            <div class="d-inline-flex p-2">
+
+        <div class="alert alert-success" role="alert">
+          <p>Analogy r/s for the first two words entered is as last word to the result SW </p> <a href="#" class="alert-link">{{x}}.</a>
+            
+  </div>
+     </div>
+
+                  </form>    
+
+</div>
+            
+          </div>
+   </div>
+    </section><!-- End Contact Section -->
+{% endblock %}
+

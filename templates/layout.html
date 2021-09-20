@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+        <!-- documentation at http://getbootstrap.com/docs/4.0/, alternative themes at https://bootswatch.com/4-alpha/ -->
+        
+   
+      <link href="/static/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="/static/css/kkk.css" rel="stylesheet"/>
+
+                                                                <script src="/static/js/jquery-3.3.1.slim.min.js"></script>
+
+                        
+ <script src="/static/js/bootstrap.min.js"></script>
+                         <script src="/static/js/bootstrap.bundle.min.js"></script>
+
+        
+        <title>Deep Learning: {% block title %}{% endblock %}</title>
+        
+
+
+    </head>
+
+    <body>
+
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark p-0 shadow">
+
+
+
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/">Deep Learning</a>
+   <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+</button>
+     <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto mt-2">
+                  
+
+
+                    <li class="nav-item"><a class="nav-link" href="/ft">BiLSTMFT model</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/wv">BiLSTMWV model</a></li>
+
+                </ul>
+          </div>
+</nav>
+     <div class="container-fluid">
+     
+  <div class="row" id="body-row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+
+
+    <div id="sidebar-container" ><!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+
+<!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+        <!-- Bootstrap List Group -->
+        <ul class="list-group">
+            <!-- Separator with title -->
+            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <small>MAIN MENU</small>
+            </li>
+            <!-- /END Separator -->
+            <!-- Menu with submenu -->
+           
+            <a href="#submenu" data-toggle="collapse" aria-expanded="false" class="bg-light list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-filter fa-fw mr-3"></span> 
+                    <span class="menu-collapsed">Mesure Inefernce</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <div id='submenu' class="sidebar-submenu collapse">
+                <a href="/truewv"class="list-group-item list-group-item-action bg-light">
+                    <span class="menu-collapsed">  Mesure Inefernces w2vBiMPI
+</span>
+                </a>
+                <a href="/true" class="list-group-item list-group-item-action bg-light">
+                    <span class="menu-collapsed">  Mesure Inefernces SWBiMPI
+</span>
+                </a>
+            </div>      
+                       
+            <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-light list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-filter fa-fw mr-3"></span> 
+                    <span class="menu-collapsed">Plot accuracy</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <div id='submenu1' class="sidebar-submenu collapse">
+                <a href="/grid" class="list-group-item list-group-item-action bg-light">
+                    <span class="menu-collapsed">Plot accuracy w2vBiMPI
+
+</span>
+                </a>
+                <a href="/grida" class="list-group-item list-group-item-action bg-light">
+                    <span class="menu-collapsed">Plot accuracy SWBiMPI
+
+</span>
+                </a>
+            </div> 
+            <!-- Submenu content -->
+                    <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-light list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-filter fa-fw mr-3"></span> 
+                    <span class="menu-collapsed">Filters</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+          
+            <a href="#submenu2" data-toggle="collapse" aria-expanded="true" class="bg-light list-group-item list-group-item-action flex-column align-items-start " class="dropdown-toggle" >
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fal fa-sitemap fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Layouts</span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <div id='submenu2' class="sidebar-submenu collapse">
+                <a href="/plot_url" class="list-group-item list-group-item-action bg-light">
+                    <span class="menu-collapsed">Settings</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <span class="menu-collapsed">Password</span>
+                </a>
+            </div>            
+            <a href="#" class="bg-light list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-tasks fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Functions</span>    
+                </div>
+            </a>
+            <!-- Separator with title -->
+            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <small>Amaharic SW and w2v Results</small>
+            </li>
+            <!-- /END Separator -->
+              <a href="/morphemewv" class="bg-light list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-edit fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Sw and w2v Morpheme</span>
+                </div>
+            </a>
+            <a href="/disimilarwv" class="bg-light list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-edit fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Sw and w2v disimilarity</span>
+                </div>
+            </a>
+             <a href="/simwv" class="bg-light list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-edit fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Similarity Value </span>
+                </div>
+            </a>
+            <!-- Separator without title -->
+           <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <small>Comparing models Accuracy</small>
+            </li>
+            <a href="/compare_models" class="bg-light list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-question fa-fw mr-3"></span>
+                    <span class="menu-collapsed">All models plot</span>
+                </div>
+            </a>
+            <a href="#" data-toggle="sidebar-colapse" class="bg-light list-group-item list-group-item-action d-flex align-items-center">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+                    <span id="collapse-text" class="menu-collapsed">Collapse</span>
+                </div>
+            </a>
+        </ul><!-- List Group END-->
+  <!-- sidebar-container END -->
+  </div>
+              </nav>
+    
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="container">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+
+        <h1 class="h3">Amaharic Entailment Classification</h1>
+                  
+            </div>
+            
+     {% block main %}{% endblock %}
+
+</div>
+
+
+        </main>
+      
+      </div>
+           </div>
+
+
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+               
+<script>
+// Hide submenus
+    
+ $(document).ready(function() {
+  $('#submenu2').on('show.bs.collapse', function(e) {
+    if ($(e.target).is("#submenu2")) {
+      $('#submenu2').toggleClass('active');
+      $('#content').toggleClass('expand');
+    }
+  });
+});
+
+
+</script>
+
+    </body>
+    
+   
+</html>
+     
+            

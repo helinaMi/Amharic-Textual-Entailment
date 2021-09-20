@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+ Mesure Inefernces
+{% endblock %}
+
+{% block main %}
+<div class="container">
+
+      <p class="lead"> Mesure Inefernces</p>
+
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>Mathed</th>
+              <th>Mismatched</th>
+             
+            </tr>
+          </thead>
+            <tbody>
+             <tr>
+          
+              <td>{{ d|safe }}</td>
+              <td><code>{{ m|safe }}</code></td>
+              <td><code></code></td>
+            </tr>
+                <tr>
+                      <td><code>Macthed {{e}} from  16 test data </code></td>
+                       <td><code>MisMacthed {{n}} from  16 test data </code></td>
+
+            </tr>
+            <tr></tbody>
+        </table>
+      </div>
+
+
+
+
+    
+{% endblock %}

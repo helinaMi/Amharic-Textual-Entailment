@@ -1,0 +1,30 @@
+{"gold": "neutral", "sentence1": "የቤተሰብ ቀን በባሕሩ ዳርቻ ላይ", "sentence2": "ምንም እንኳን የቤተሰብ ቀን ቢሆንም ብዙ ሰዎች በባሕሩ ዳርቻ ላይ አሉ"}
+{"gold": "contradiction", "sentence1": "ፖሊሱ ሰውየውን መታው", "sentence2": "ሴትየዋ የተመታችው በፖሊሱ ነው"}
+{"gold": "entailment", "sentence1": "ፖሊሱ ሰውየውን መታው", "sentence2": "ሰውየው የተመታው በፖሊሱ ነው"}
+{"gold": "entailment", "sentence1": "አንድ ሰው ስልኩን እያየ ነው", "sentence2": "ሰውየው ስልኩን እየተመለከተ ነው"}
+{"gold": "neutral", "sentence1": "አንድ ሰው ስልኩን እየነካካ ነው", "sentence2": "ሰውየው ስልኩን እየተመለከተ ነው"}
+{"gold": "entailment", "sentence1": "እኔ እና አንቺ የበጎ አድራጎት አባል ነን", "sentence2": "እኛ የበጎ አድራጎት አባል እንደሆንን ይታወቃል"}
+{"gold": "contradiction", "sentence1": "እኛ ለስጦታዋ የሚሆን ገንዘብ እያሰባሰብን ነው", "sentence2": "ለስጦታዋ የሚሆን ምንም ገንዘብ አላሰባሰብንም"}
+{"gold": "contradiction", "sentence1": "ሁለት ሴቶች በአንድ ምግብ ቤት ውስጥ አይደሉም", "sentence2": "ሁለት ሴቶች ምግብ ቤት ውስጥ አየበሉ ናችው"}
+{"gold": "contradiction", "sentence1": "ወንድ እና ሴት ጠረጴዛ አጠገብ ተቀምጠው ወይን እየጠጡ ነው", "sentence2": "ሁለት አልኮል ማይጠጡ ሰዎች ለእራት እይተዘጋጁ ነው"}
+{"gold": "entailment", "sentence1": "የተወሰኑ ህጻናት የደህንነት ጠባቂውን እየሰሙ ነው", "sentence2": "ልጆቹ ጠባቂውን ይሰማሉ"}
+{"gold": "entailment", "sentence1": "ወጣት ሴቶች በምሽት ጉዞ ላይ ናቸው", "sentence2": "ሴቶቹ እንቅስቃሴ ላይ ናቸው"}
+{"gold": "neutral", "sentence1": "ሰማያዊ ሸሚዝና መነጽር ያደረገ አንድ ወንድ ከአንዲት ልጃ ገረድ እና ከተደረደረ መጽሃፍ ፊት ለፊት ሆኖ  አንድ መጽሃፍ ላይ ወደሚታይ ስእል እያመለከተ ነው", "sentence2": "ልጅቷ በሥዕሉ ላይ ፍላጎት አላት"}
+{"gold": "contradiction", "sentence1": "ወንዶች ለየብቻቸው ይበላሉ", "sentence2": "ወንዶች ለየብቻቸው ቁጭ ብለዋል"}
+{"gold": "contradiction", "sentence1": "ወንዶች በቤታቸው ይበላሉ", "sentence2": "ወንዶች በቤታቸው  ቁጭ ብለዋል"}
+{"gold": "entailment", "sentence1": "አንዲት ሴት አንድ ህንፃ አጠገብ ቀይ አግዳሚ ወንበር ላይ ተቀምጣ ፈዛለች", "sentence2": "አንዲት ሴት ውጭ ተቀምጣለች"}
+{"gold": "contradiction", "sentence1": "ሁለት ሰዎች ቤት ውስጥ ግንባታ እየገነቡ ነው", "sentence2": "ልጆች ቤት ውስጥ እየሰሩ ነው"}
+{"gold": "contradiction", "sentence1": "አንድ ሰው ስፖርት አየሰራ አይደለም", "sentence2": "ሰውየው ስፖርት አየሰራ ነው"}
+{"gold": "contradiction", "sentence1": "ወንዶች ቆመዋል", "sentence2": "ልጆች ቁጭ ብለዋል"}
+{"gold": "entailment", "sentence1": "አረንጓዴ እና ጥቁር ጃኬት የለበሰ ሰው በቆሻሻ መጣያ ላይ ተቀምጧል", "sentence2": "ጃኬት የለበስ ሰው በቆሻሻ መጣያ ላይ ተቀምጧል"}
+{"gold": "contradiction", "sentence1": "ሁለት ውሾች በቆሻሻ ውስጥ እየሮጡ ነው", "sentence2": "ሁለት ውሾች ትምህርት ቤት ውስጥ ሲሯሯጡ"}
+{"gold": "entailment", "sentence1": "አንድ የክረምት ካፖርት እና ጂንስ የለበሰ አረጋዊ ሰው ትልቅ ተሽከርካሪ የአበባ ጋሪ ፊት ቆሟል", "sentence2": "ሽማግሌው ሰው ወፍራም ኮት ለብሷል"}
+{"gold": "neutral", "sentence1": "የተወሰኑ ሰዎች እጅ ለእጅ ተያይዘው አረንጓዴ ሳር ላይ ይሄዳሉ", "sentence2": "ሰዎቹ ሁሉም ጓደኛሞች ናቸው"}
+{"gold": "entailment", "sentence1": "ነጣ ያለ ሰማያዊ ጃኬት የለበሰች ሴት በብስክሌት እየተጓዘች ነው", "sentence2": "ጃኬት የለበሰች ሴት ብስክሌት እየጋለበች ነው"}
+{"gold": "entailment", "sentence1": "ሰማያዊ ጃኬት የለበሰ ሰው በብስክሌት እየጋለበ ነው", "sentence2": "አንድ ሰው በብስክሌት ላይ ነው"}
+{"gold": "contradiction", "sentence1": "ትምህርት ቤት እንሂድ", "sentence2": "ነዳጅ ማደያ እንሂድ"}
+{"gold": "entailment", "sentence1": "እስቲ እንመልከት", "sentence2": "እስቲ እንይ"}
+{"gold": "cotradiction", "sentence1": "የሃዲድ መንገድ ላይ ጥገና እያደረገ ያለ ሰውዬ", "sentence2": "የሃዲድ መንገድ ላይ ስራ እየሰራ ያለች ሴትዮ አለች"}
+{"gold": "neutral", "sentence1": "ጥቁር የለበሱ ሁለት ወንዶች ቀይ መኪና ውስጥ ባህር ዳርቻ ላይ ናቸው", "sentence2": "ተሽከርካሪው ትልቅ ነው"}
+{"gold": "entailment", "sentence1": "ሁለት ሴቶች መጠጥ ቤት ውስጥ አየጠጡ ናችው", "sentence2": "ሁለት ሴቶች በአንድ መጠጥ ቤት ውስጥ ናችው"}
+{"gold": "contradiction", "sentence1": "ፀቁረ ወርቃማ እና ነጭ ልጃገረድ በጅምናስቲች ገመድ ላይ ተንጠልጥላለች", "sentence2": "አንዲት ልጅ እየሮጠች ነው"}

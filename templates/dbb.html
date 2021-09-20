@@ -1,0 +1,38 @@
+{% extends "segment.html" %}
+
+
+{% block main %}
+        <div class="container">
+<form action= "/ti" method="POST">
+
+     <select name= 't'>
+      {% for row in t %}
+                 {% for d in row %}
+ 
+  
+            <option value="{{ d}}"{% if loop.first %} SELECTED{% endif %}> {{ d }} </option>
+        
+      {% endfor %}
+             {% endfor %}
+
+
+      </select>
+    
+    <input type="submit" class="btn btn-lg btn-secondary" value="Press" />
+    
+<table border="1" cellpadding="5" cellspacing="5">
+    {% for row in tables  %}
+        <tr>
+        {% for d in row %}
+            <td>{{ d }}</td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+           </table>
+  
+    </form>
+    </div>
+
+
+
+{% endblock %}

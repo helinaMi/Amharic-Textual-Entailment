@@ -1,0 +1,35 @@
+{% extends "segment.html" %}
+
+
+{% block main %}
+        <div class="container">
+<form action= "/ti" method="POST">
+
+     <select name= 't'>
+      {% for row in t %}
+                 {% for gg in row %}
+ 
+  
+            <option value="{{ gg }}"{% if loop.first %} SELECTED{% endif %}> {{ gg }} </option>
+        
+      {% endfor %}
+             {% endfor %}
+
+      </select>
+    
+    <input type="submit" class="btn btn-lg btn-secondary" value="Press" />
+    
+
+     
+ {% for table in titles %}
+            
+            {{ table|safe }}
+
+{% endfor %}  
+  
+    </form>
+    </div>
+
+
+
+{% endblock %}

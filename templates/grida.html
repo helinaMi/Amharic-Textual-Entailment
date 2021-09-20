@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+home
+{% endblock %}
+
+{% block main %}
+  
+        <p>
+           MOdels Plot.
+        </p>
+
+
+
+
+  {%  if accuracyf %}
+
+
+<img src="data:image/png;base64,{{pltalf}}">
+  {%  endif  %}
+
+
+{% endblock %}

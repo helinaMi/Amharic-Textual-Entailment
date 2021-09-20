@@ -1,0 +1,50 @@
+{% extends "result.html" %}
+
+
+{% block main %}
+      <div class="container">
+
+                <ul >
+
+    <p>The customer ID  you enterd:<b>{{ c }}</b> </p>
+  
+<table border="1" cellpadding="5" cellspacing="5">
+     {% for row in col  %}
+     
+            <th>{{ row }}</th>
+       
+
+            {% endfor %}
+
+    {% for row in cus  %}
+        <tr>
+        {% for d in row %}
+            <td>{{ d }}</td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+           </table>
+                  <ul />
+
+    <br>                 
+     <form action="/ibid" enctype="multipart/form-data" method="post">
+
+    <div class="form-group row">
+    <label >Enter ID</label>
+<div class="input-group mb-3 col-md-5">
+
+ <input type="text" class="form-control" name="c" required="required"  oninvalid="this.setCustomValidity('pls insert customer ID')"       oninput="this.setCustomValidity('')">
+    
+          <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="submit">Find customer</button>
+              <br>
+  </div>
+    </div>  </div>
+              
+
+                  </form>    
+
+
+
+
+{% endblock %}

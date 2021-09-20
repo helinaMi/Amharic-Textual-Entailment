@@ -1,0 +1,21 @@
+{% extends "segment.html" %}
+
+{% block title %}
+{% endblock %}
+
+{% block main %}
+     
+ 
+<div>
+    <p>This is to see the clusture monetery value with time:</p>            
+<p class="lead">
+     
+ <img src="data:image/png;base64,{{ plott }}">
+
+   <p>This is to see the clusture monetery value with the frequency :</p>            
+<p class="lead">
+     
+ <img src="data:image/png;base64,{{ plot_ur }}">
+
+    </div>
+{% endblock %}

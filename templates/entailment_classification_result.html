@@ -1,0 +1,103 @@
+{% extends "por.html" %}
+{% block main %}
+  <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>BMPM</h2>
+                        
+     
+         
+           
+             <nav class="nav-menu d-none d-lg-block">
+                 
+        <ul> 
+            <li><a href="/">Home</a></li>
+        
+            <li class="drop-down"><a href="">Select the Models</a>
+            <ul>
+                            <li ><a href="/wv">RSSM-SW</a>
+                  
+                    </li>
+              <li><a href="/ft">BMPM</a>
+             
+                    </li>
+             <li ><a href="#">RSSM-SG</a>
+
+           
+
+         
+        </ul>
+ </li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+
+
+<section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>BMPM Entailment Classifier</h2>
+          <p>Here you can Find Entailment classification and accuracy result of BMPM model.</p>
+        </div>
+          
+          
+        <div class="row">
+
+         
+            
+            
+  <div class="col-lg-10 mt-5 mt-lg-0 d-flex align-items-stretch">
+      
+            <form action="/ft" method="post" role="form" class="form">
+                
+              <div class="form-row">
+                <div class="form-group col-md-8">
+                  <label for="sentencea">Premise </label>
+                  <input type="text" name="sentencea" class="form-control" id="c" data-rule="minlen:10" data-msg="Please enter at least 10 numbers" />
+                  <div class="validate"></div>
+            
+                  <label for="sentencea">Hypotesis </label>
+                  <input type="text" name="sentenceb" class="form-control" id="c" data-rule="minlen:10" data-msg="Please enter at least 10 numbers" />
+                  <div class="validate"></div>
+                </div>
+                </div>
+              
+              <div class="text-center"><button type="submit">Predict</button></div>
+     
+            <div class="d-inline-flex p-2">
+
+        <div class="alert alert-success" role="alert">
+              <p>Pair of sentences entered above are <br>Premise: {{sentencea}} <br> Hypothesis: {{sentenceb}} </p>
+       <P>Predicted Class:</p>
+              {% if pred %}
+              {{ pred }}
+               {% endif %} 
+           
+           <P>Prediction Accuracy:</p>
+          {% if score %}
+          {{ score }}
+           {% endif %}
+       </div>
+ </div>
+            </form>
+         
+
+        </div>
+    
+ </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+
+
+ 
+
+
+{% endblock %}

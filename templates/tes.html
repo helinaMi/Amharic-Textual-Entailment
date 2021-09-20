@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Deep free from...</title>
+</head>
+
+<body>
+
+
+
+<p id="result"></p>
+
+<select id="resn">
+{% for datanum in data %}
+<option value={{datanum}} id={{datanum}} >{{datanum}} </option>
+{% endfor %}
+</select>
+
+<script>
+
+function GetSelectedText(){
+var e = document.getElementById("resn");
+var result = e.options[e.selectedIndex].text;
+
+document.getElementById("result").innerHTML = result;
+}
+
+</script>
+
+<br/>
+<br/>
+
+
+<button type="button" onclick="GetSelectedText()">Confirm Restaurant </button>
+</body>
+
+</html>

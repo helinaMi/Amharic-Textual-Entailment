@@ -1,0 +1,32 @@
+{% extends "result.html" %}
+
+
+{% block main %}
+<div class="d-inline-flex p-2 col-md-7">
+       <div class="container">
+              <p class="lead">
+Enter the customer id and find out its segmentation based on in its life time value here the customers are eho rised all of CBE branchs
+             
+
+
+
+<form  action="/ibid" method='post'>
+                           <div class="form-group row">
+    <label >Enter ID</label>
+<div class="input-group mb-3 col-md-7">
+
+ <input type="text" class="form-control" name="c" required="required"  oninvalid="this.setCustomValidity('pls insert customer ID')"       oninput="this.setCustomValidity('')">
+          <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="submit">Find customer</button>
+              <br>
+  </div>
+    </div>  
+              </div>
+
+                  </form>    
+
+ <p>
+            Please be patient. the result may take longer to process.
+        </p>
+
+{% endblock %}

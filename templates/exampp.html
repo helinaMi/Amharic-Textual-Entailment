@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test</title>
+    </head>
+    <body>
+        
+        
+        <form action="/" method="POST" class=add-worker >
+            <dl>
+<dt>Surname:
+    <dd><select name="value ">
+       {% for value in al   %}
+       
+
+<option value="{{ value }}" > {{ value }} </option>
+
+{% endfor %}
+        </select>
+       
+       
+        <dd><input type=submit value="Submit">
+             
+            </dl>
+    </form>
+        
+         {{ value }} 
+        <table border="1" cellpadding="5" cellspacing="5">
+    {% for row in workers0  %}
+        <tr>
+        {% for d in row %}
+            <td>{{ d }}</td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+           </table>
+      
+    </body>
+</html>

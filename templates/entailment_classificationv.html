@@ -1,0 +1,165 @@
+{% extends "por.html" %}
+{% block main %}
+  <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>RSSM-SW</h2>
+                        
+     
+         
+           
+             <nav class="nav-menu d-none d-lg-block">
+                 
+        <ul> 
+            <li><a href="/">Home</a></li>
+        
+            <li class="drop-down"><a href="">Select the Models</a>
+            <ul>
+                  
+              <li ><a href="/wv">RSSM-SW</a>
+                  
+                    </li>
+              <li><a href="/ft">BMPM</a>
+             
+                    </li>
+             <li ><a href="#">RSSM-SG</a>
+
+           
+            
+            
+         
+        </ul>
+ </li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+
+
+<section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>RSSM-SW Entailment Classifier</h2>
+          <p>Here you can Find Entailment classification and accuracy result of RSSM-SW model.</p>
+        </div>
+          
+          
+        <div class="row">
+
+         
+            
+            
+  <div class="col-lg-10 mt-5 mt-lg-0 d-flex align-items-stretch">
+      
+            <form action="/wv" method="post" role="form" class="form">
+                
+              <div class="form-row">
+                <div class="form-group col-md-8">
+                  <label for="sentencea">Premise </label>
+                  <input type="text" name="sentencea" class="form-control" id="c" data-rule="minlen:10" data-msg="Please enter at least 10 numbers" />
+                  <div class="validate"></div>
+            
+                  <label for="sentencea">Hypotesis</label>
+                  <input type="text" name="sentenceb" class="form-control" id="c" data-rule="minlen:10" data-msg="Please enter at least 10 numbers" />
+                  <div class="validate"></div>
+                </div>
+                </div>
+              
+              <div class="text-center"><button type="submit">Predict</button></div>
+                
+                      
+
+            </form>
+          </div>
+
+        </div>
+    
+
+      </div>
+    </section><!-- End Contact Section -->
+ <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Model Comparssion</h2>
+        <p class="lead"> Mesure Inefernces</p>
+            </div>
+
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>Matched</th>
+              <th>Mismatched</th>
+             
+            </tr>
+          </thead>
+            <tbody>
+             <tr>
+          
+              <td>{{ d|safe }}</td>
+              <td><code>{{ m|safe }}</code></td>
+              <td><code></code></td>
+            </tr>
+                <tr>
+                      <td><code>Predicted {{e}} Correct from 30 test data </code></td>
+                       <td><code>Predicted {{n}} Wrong from 30 test data </code></td>
+
+            </tr>
+            <tr></tbody>
+        </table>
+      </div>
+    </section><!-- End About Us Section -->
+
+   
+ <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Visualization RSSM-SW</h2>
+            <p>The Following visualization shows the Training and Validation accuracy of RSSM-SW model.</p>
+
+                    </div>
+                               <div class="row justify-content-center align-items-center">
+
+
+            <img src="static/img/trrssm.png" class="img-fluid" alt="">
+                          <img src="static/img/valrssm.png" class="img-fluid" alt="">
+
+              
+          </div>
+   
+
+
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+    
+       
+          
+            </div>
+         
+
+
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    
+    <!-- ======= Portfolio Section ======= -->
+   
+   
+
+  
+
+{% endblock %}

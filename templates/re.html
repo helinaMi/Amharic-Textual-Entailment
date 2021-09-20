@@ -1,0 +1,28 @@
+{% extends "segment.html" %}
+
+
+{% block main %}
+        <div class="container">
+<form action= "/tt" method="POST">
+
+     <select name= 't'>
+      {% for t in t %}
+        {% if t == t %}
+            <option value="{{ t }}" selected='selected'>{{ t }} </option>
+        
+        {% endif %}
+      {% endfor %}
+
+      </select>
+    
+    <input type="submit" class="btn btn-lg btn-secondary" value="Press" />
+    
+    </form>
+
+    </div>
+ 
+
+
+
+
+{% endblock %}

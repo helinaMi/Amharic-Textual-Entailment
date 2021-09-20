@@ -1,0 +1,29 @@
+{% extends "result.html" %}
+
+{% block title %}
+{% endblock %}
+
+{% block main %}
+                <p class=" lead text-justify"> This is to visualize how the RFM models are clustered with respect to their values.</p>
+
+                    <ul> Recency tells how recent the customer transact always and best when it is lower</ul>
+                    <ul>Frequency represent how frquent the customer transact and always best when it is higer</ul>
+                    <ul>Monetery represent the amount of money the customer involves for transaction and always best when it is higer</ul>
+
+ 
+<div>
+       <p>clusturing Viz  between Customer Life time value and Recency:</p>            
+<p class="lead">
+ <img src="data:image/png;base64,{{ plott }}">
+
+       <p>Clusturing Viz  between Customer Life time value and Frequency:</p>            
+<p class="lead">
+   
+     
+ <img src="data:image/png;base64,{{ plot_ur }}">
+       <p>clusturing Viz  between Customer Life time value and Monetery:</p>            
+<p class="lead">
+     <img src="data:image/png;base64,{{ plotm }}">
+
+    </div>
+{% endblock %}

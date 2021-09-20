@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Dropdown</title>
+    </head>
+    <body>
+        
+      {{ form.hidden_tag() }}
+      {{ form.locations(class_="form-control") }}
+      <select class="form-control devices" id="SECTOR_NAME" method="GET" action="/"></select>
+              <select class="form-control devices" id="INDUSTRY_NAME" method="GET" action="/"></select>
+
+    
+     </body>
+    <script>
+        let SECTOR_NAME = document.getElementById('SECTOR_NAME');
+        let INDUSTRY_NAME = document.getElementById('INDUSTRY_NAME');
+
+        SECTOR_NAME.onchange = function(){
+            value = SECTOR_NAME.value;
+
+            fetch('/device_choice/' + value).then(function(response){
+
+                response.json().then(function(data){
+                    let optionHTML = '';
+
+                    for(let opt of data.INDUSTRY_NAME){
+                        optionHTML += '<option value ="'  + opt + '">' + opt + '</option>';
+                    }
+
+                    devices.innerHTML = optionHTML;
+
+                });
+            });
+        }
+  </script>
+      {{ m|safe}}
+  </html>

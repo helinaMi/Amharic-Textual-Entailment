@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+home
+{% endblock %}
+
+{% block main %}
+           <form action="/disimilar" method='post' >
+        <p>Please Enter The two Sentenses which contain Premises and Hypotesis.</p>
+
+        
+                   
+        
+        <p>
+                         <label>Premises</label>
+
+              <input type="text" class="form-control" name="sentence" required></p>
+  
+<p>  
+              
+            <button class="btn btn-lg btn-secondary" type="submit">Evaluate</button>
+        </p>
+                     
+
+
+        <p>
+            Please be patient. Large amounts of text may take longer to process.
+        </p>
+    </form>  
+    
+   
+    <ul>
+
+         <p class="alert alert-primary" role="alert">
+              {% for result in result %} 
+             {{ result }}
+             {% endfor %} 
+             <h1>Probablity</h1>
+
+
+{% endblock %}
+

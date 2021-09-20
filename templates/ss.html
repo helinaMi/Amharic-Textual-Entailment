@@ -1,0 +1,39 @@
+{% extends "result.html" %}
+
+
+{% block main %}
+<div class="d-inline-flex p-2 col-sm-7">
+
+      <div class="container">
+              <p class="lead">
+Please select the customer segmentation on Internet banking and you will find out the customers who classified as your selection options.                  <br>
+                  <br>
+   <form  action="/ibseg" method='post'>
+
+                         <div class="form-group row">
+<div class="input-group mb-3 col-md-7">
+
+     <select name= 's'>
+      {% for row in s %}
+                 {% for gg in row %}
+ 
+  
+            <option value="{{ gg }}"{% if loop.first %} SELECTED{% endif %}> {{ gg }} </option>
+        
+      {% endfor %}
+             {% endfor %}
+
+
+      </select>
+    
+    <button class="btn btn-outline-secondary" type="submit">select Segment</button>
+    </div>
+                                </div>
+
+    </form>
+
+
+
+
+
+{% endblock %}

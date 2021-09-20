@@ -1,0 +1,52 @@
+{% extends "result.html" %}
+
+
+{% block main %}
+ <div class="container">
+       
+  <form  action="/ibseg" method='post'>
+
+                         <div class="form-group row">
+<div class="input-group mb-3 col-md-7">
+
+     <select name= 's'>
+      {% for row in s %}
+                 {% for gg in row %}
+ 
+  
+            <option value="{{ gg }}"{% if loop.first %} SELECTED{% endif %}> {{ gg }} </option>
+        
+      {% endfor %}
+             {% endfor %}
+
+
+      </select>
+    
+    <button class="btn btn-outline-secondary" type="submit">select Segment</button>
+    </div>
+                                </div>
+
+    </form>
+  
+<table border="1" cellpadding="5" cellspacing="5">
+     {% for row in col  %}
+     
+            <th>{{ row }}</th>
+       
+
+            {% endfor %}
+
+    {% for row in r  %}
+        <tr>
+        {% for d in row %}
+            <td>{{ d }}</td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+           </table>
+  
+
+
+
+
+{% endblock %}

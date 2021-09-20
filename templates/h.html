@@ -1,0 +1,30 @@
+{% extends "result.html" %}
+
+
+{% block main %}
+<div class="d-inline-flex p-2 col-sm-7">
+
+
+      <div class="container">
+              <p class="lead">
+Here you can find the customer segmnetation on INternet banking. from this customeer life time value can be discoverd in both customer wise and life time value.
+                  
+<div class="list-group">
+  <a href="/ibid" class="list-group-item list-group-item-action flex-column align-items-start active">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1"> Each IB Customer Life Time Value</h5>
+    </div>
+    <p class="mb-1">Enter the customer Id and find out segmentation based on customer life time value in customer level, here the customers are reside in  all of CBE branchs</p>
+    <small>Id is mandatory here</small>
+  </a>
+  <a href="/ibseg" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">All IB Customers CLV</h5>
+    </div>
+    <p class="mb-1">You can find select the customer segmentation on Internet banking and you will find out the customers who classified as the your selection options.</p>
+    <small class="text-muted">Low High and Mid are the values.</small>
+  </a>
+    </div>
+    </div>
+
+{% endblock %}

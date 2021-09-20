@@ -1,0 +1,15 @@
+{% extends "segment.html" %}
+
+{% block title %}
+ Mesure Inefernces
+{% endblock %}
+
+{% block main %}
+  
+{% for table in tables %}
+
+            {{titles[loop.index]}}
+            {{ table|safe }}
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,124 @@
+{% extends "por.html" %}
+
+
+
+{% block main %}
+  <!-- ======= Breadcrumbs ======= -->
+     <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Intrinsic evaluation</h2>
+                        
+     
+         
+           
+              <nav class="nav-menu d-none d-lg-block">
+                 
+        <ul> 
+            <li><a href="/">Home</a></li>
+        
+        
+            <li class="drop-down"><a href="">Word2Vec Eval</a>
+            <ul>
+              <li ><a href="/morphemewv">Related words</a>
+                  
+                    </li>
+              <li><a href="/analogyw">Analogy r/s</a>
+             
+                    </li>
+                    <li><a href="/morphemew">Similarity Score</a></li>
+           
+               
+              <li ><a href="/simwv">Most similars</a></li>
+                <li ><a href="/disimilarwv">One odd out</a></li>
+                      <li ><a href="/wpca">PCA</a></li>
+            
+            
+         
+        </ul>
+ </li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+        </div>
+</div>   
+
+         
+    </section><!-- End Breadcrumbs -->
+
+<section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>PCA Visualization</h2>
+           <p>Here you can Find one of intrinsic evaluation in SW and SG models PCA vizualization the nearest give Term.</p>
+        </div>
+
+      
+        <div class="row">
+            
+           
+     <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
+       
+
+ <form action="/wpca" method="post" role="form" class="form">
+              <div class="form-row">
+              
+              <div class="form-group col-md-8">
+                  <label >Enter a word</label>
+                  <input type="text" name="sentence" class="form-control" id="sentence" data-rule="minlen:10" data-msg="Please enter at least 10 numbers" />
+                  
+                                    <div class="validate"></div>
+
+                
+                </div>
+                       </div>
+                               
+                                    <div class="form-group-append"><button type="submit">PCA SG </button></div>
+            
+
+
+                  </form>  
+
+</div>
+            
+
+               
+ <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
+
+    
+
+    
+          <form action="/fpca" method="post" role="form" class="form">
+              <div class="form-row">
+              
+              <div class="form-group col-md-8">
+                  <label >Enter a word</label>
+                  <input type="text" name="sentenceb" class="form-control" id="sentenceb" data-rule="minlen:10" data-msg="Please enter at least 10 numbers" />
+                  
+                                    <div class="validate"></div>
+
+                
+                  
+                </div>
+                       </div>
+                                       <div class="form-group-append"><button type="submit">PCA SW </button></div>      
+
+                 
+                  </form>  
+
+
+</div>
+
+            
+          </div>
+   </div>
+      <div class="row justify-content-center align-items-center">
+            <img src="data:image/png;base64,{{plot_url }}">
+</div>
+
+    </section><!-- End Contact Section -->
+ 
+{% endblock %}
+

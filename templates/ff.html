@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Dropdown</title>
+    </head>
+    <body>
+        
+      {{ form.hidden_tag() }}
+      {{ form.locations(class_="form-control") }}
+      <select class="form-control devices" id="SECTOR_NAME" method="GET" action="/"></select>
+              <select class="form-control devices" id="INDUSTRY_NAME" method="GET" action="/"></select>
+
+     <input type="submit" class="btn btn-lg btn-secondary" value="Press" />
+    
+
+<table border="1" cellpadding="5" cellspacing="5">
+    {% for row in m  %}
+        <tr>
+        {% for d in row %}
+            <td>{{ d }}</td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+           </table>
+      
+
+     </body>
+    
+  </html>

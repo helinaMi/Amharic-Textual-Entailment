@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Deep free from...</title>
+</head>
+
+<body>
+
+
+
+<p id="result"></p>
+
+<select id="resn">
+{% for datanum in data %}
+<option value={{datanum}} id={{datanum}} >{{datanum}} </option>
+{% endfor %}
+</select>
+
+<script>
+
+function GetSelectedText(){
+var e = document.getElementById("resn");
+    var result = e.options[e.SelectedIndex].text;
+ function run() {
+     // on récupère le choix des valeurs des bouttons //
+    var values = getValues();
+
+
+     var table = document.getElementById("result");
+            if (table != null) {
+              table.innerHTML = "";
+
+              for (var i = 0; i < objects.length; i++) {
+                var object = objects[i];
+
+                var tr = document.createElement("tr");
+                var td = null;
+
+                td = document.createElement("td");
+                td.appendChild(document.createTextNode(object['Loan_ID']));
+                tr.appendChild(td);
+
+                td = document.createElement("td");
+                td.appendChild(document.createTextNode(object['Gender']));
+                tr.appendChild(td);
+
+                td = document.createElement("td");
+                td.appendChild(document.createTextNode(object['Married']));
+                tr.appendChild(td);
+
+                table.appendChild(tr);
+              }
+            }
+          }
+        }
+
+}
+
+</script>
+
+<br/>
+<br/>
+
+
+<button type="button" onclick="GetSelectedText()">Confirm Restaurant </button>
+</body>
+
+</html>

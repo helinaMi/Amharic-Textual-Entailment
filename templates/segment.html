@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+        
+       <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- documentation at http://getbootstrap.com/docs/4.0/, alternative themes at https://bootswatch.com/4-alpha/ -->
+        
+   
+       <link href="/static/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="/static/css/stylc.css" rel="stylesheet"/>
+
+                                                                <script src="/static/js/jquery-3.3.1.slim.min.js"></script>
+
+                        
+ <script src="/static/js/bootstrap.min.js"></script>
+                         <script src="/static/js/bootstrap.bundle.min.js"></script>
+
+
+        <title>Customer Segmentation: {% block title %}{% endblock %}</title>
+
+ </head>
+                                     
+
+ <body>
+         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark p-0 shadow">
+
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/">Customer Segmentation</a>
+   <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+</button>
+     <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto mt-2">
+                  
+
+
+                    <li class="nav-item"><a class="nav-link" href="/ibidd">IB home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/ibseg">MB home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/rr">Visualization</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/graph">Graph</a></li>
+
+
+
+
+                </ul>
+          </div>
+</nav>
+            
+     
+     <div class="container-fluid">
+                <script type="text/javascript" src="{{ url_for('static', filename='jquery-3.3.1.slim.min.js') }}"></script>
+
+  <div class="row" id="body-row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+
+
+    <div id="sidebar-container" ><!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+
+<!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+        <!-- Bootstrap List Group -->
+        <ul class="list-group">
+            <!-- Separator with title -->
+            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <small>MAIN MENU</small>
+            </li>
+            <!-- /END Separator -->
+            <!-- Menu with submenu -->
+           
+            <a href="#submenu" data-toggle="collapse" aria-expanded="false" class="bg-light list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-filter fa-fw mr-3"></span> 
+                    <span class="menu-collapsed">E-Transaction</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <div id='submenu' class="sidebar-submenu collapse">
+                <a href="/ibidd"class="list-group-item list-group-item-action bg-light">
+                    <span class="menu-collapsed">Internet Transaction
+</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <span class="menu-collapsed">Mobile Transaction
+</span>
+                </a>
+            </div>      
+                       
+            <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-light list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-filter fa-fw mr-3"></span> 
+                    <span class="menu-collapsed">TT Transaction</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <div id='submenu1' class="sidebar-submenu collapse">
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <span class="menu-collapsed">Depost Transaction
+
+</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <span class="menu-collapsed">Checque Transaction
+
+</span>
+                </a>
+            </div> 
+            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <small>Visualization</small>
+            </li>
+            <!-- /END Separator -->
+            <!-- Menu with submenu -->
+           
+            <a href="#submenu3" data-toggle="collapse" aria-expanded="false" class="bg-light list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-filter fa-fw mr-3"></span> 
+                    <span class="menu-collapsed">E-TXN viz</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <div id='submenu3' class="sidebar-submenu collapse">
+                <a href="/rr"class="list-group-item list-group-item-action bg-light">
+                    <span class="menu-collapsed">IB txn Vis
+</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <span class="menu-collapsed">MB txn Vis
+</span>
+                </a>
+                  <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <span class="menu-collapsed">POS Vis</span>
+                </a>
+            </div>
+          
+                    <a href="#submenu4" data-toggle="collapse" aria-expanded="false" class="bg-light list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-filter fa-fw mr-3"></span> 
+                    <span class="menu-collapsed">TT TXN Vis</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+          
+   
+            <!-- Submenu content -->
+            <div id='submenu4' class="sidebar-submenu collapse">
+                <a href="/rr" class="list-group-item list-group-item-action bg-light">
+                    <span class="menu-collapsed">Depostit Vis</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <span class="menu-collapsed">Cheque Vis</span>
+                </a>
+               
+            </div>
+            <!-- Separator with title -->
+            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <small>Sub Transaction</small>
+            </li>
+            <!-- /END Separator -->
+              <a href="/ibid" class="bg-light list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-edit fa-fw mr-3"></span>
+                    <span class="menu-collapsed">IB Customer status</span>
+                </div>
+            </a>
+            <a href="/ibseg" class="bg-light list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-edit fa-fw mr-3"></span>
+                    <span class="menu-collapsed">All IB segmentation </span>
+                </div>
+            </a>
+             <a href="/simwv" class="bg-light list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-edit fa-fw mr-3"></span>
+                    <span class="menu-collapsed">MB Customer status</span>
+                </div>
+            </a>
+             <a href="/simwv" class="bg-light list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-edit fa-fw mr-3"></span>
+                    <span class="menu-collapsed">All MB segmentation</span>
+                    </div>
+            </a>
+            <!-- Separator without title -->
+   
+        </ul><!-- List Group END-->
+  <!-- sidebar-container END -->
+ </div>
+              </nav>
+    
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="container">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    
+        <h1 class="cover-heading">Customer Clusturing Model.</h1>
+           </div>
+
+           <p class="text-justify">
+Customer lifetime value (CLV) as a measureable parameter plays an important role in customer segmentation (clustering). Clustering based on CLV helps bank to form distinct customer groups, reveal spending (transactional) patterns, and create long term relationships with customers. This model aims at the synthesis of a CLV model and a clustering algorithm in a new inclusive framework.</p>
+
+           <p class="text-justify">            
+The Model calculation of CLV is called Group RFM. In this model, three parameters, Recency, Frequency, and Monetary, are determined according to the transaction type services used by customers (E- transaction and teller transaction as deposit and cheque deposit).  Then by using the RFM model made a customer clustering in each transaction types. In traditional methods, the customers of valuable cluster are treated the same. But in this model, CBE can design different and proper strategies for each cluster based on the use of transaction type services.</p>
+            <p class="text-justify">  
+The expected experimental results in banking industry should verify that the model allows an accurate and efficient cluster analysis, it provides appropriate information to create clear sales and marketing policies for three identified segments (high mid low value).
+
+</p>
+      
+    {% block main %}{% endblock %}
+            
+   
+              </div>      
+        <br>
+        <br>
+                                    <div class="card text-center">
+  <div class="card-header">
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">CBE Customer Transaction Segmentation</h5>
+    <p class="card-text">The time in which the model is developed on the Third quarter.</p>
+    <a href="#" class="btn btn-primary">Go elsewhere</a>
+  </div>
+  <div class="card-footer text-muted">
+  </div>
+</div>
+   
+                
+                </main>
+     </div> 
+    
+                            
+      
+
+
+
+  </div>
+
+         
+            
+
+<script>
+// Hide submenus
+
+ $(document).ready(function() {
+  $('#submenu2').on('show.bs.collapse', function(e) {
+    if ($(e.target).is("#submenu2")) {
+      $('#submenu2').toggleClass('active');
+      $('#content').toggleClass('expand');
+    }
+  });
+});
+
+
+</script>
+       
+   
+     
+            
+        
+
+
+    </body>
+
+</html>
+
+

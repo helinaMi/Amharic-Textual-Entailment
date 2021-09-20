@@ -1,0 +1,129 @@
+{% extends "por.html" %}
+
+
+
+{% block main %}
+  <!-- ======= Breadcrumbs ======= -->
+   <!-- ======= Breadcrumbs ======= -->
+   <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Intrinsic evaluation</h2>
+                        
+     
+         
+           
+              <nav class="nav-menu d-none d-lg-block">
+                 
+        <ul> 
+            <li><a href="/">Home</a></li>
+        
+        
+            <li class="drop-down"><a href="">Word2Vec Eval</a>
+            <ul>
+              <li ><a href="/morphemewv">Related words</a>
+                  
+                    </li>
+              <li><a href="/analogyw">Analogy r/s</a>
+             
+                    </li>
+                    <li><a href="/morphemew">Similarity Score</a></li>
+           
+              <li ><a href="/simwv">Most similars</a></li>
+                <li ><a href="/disimilarwv">One odd out</a></li>                          
+                <li ><a href="/wpca">PCA</a></li>
+
+            
+         
+        </ul>
+ </li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+<section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>ONE odd out </h2>
+          <p>Here you can Find the most dismilar term froom the given words..</p>
+        </div>
+
+      
+        <div class="row">
+            
+           
+           
+
+ <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
+
+    
+
+    
+          <form action="/disimilarwv" method="post" role="form" class="form">
+              <div class="form-row">
+              
+              <div class="form-group col-md-8">
+                  <label for="sentence">Enter word/s</label>
+                  <input type="text" name="sentence" class="form-control" id="sentence" data-rule="minlen:10" data-msg="Please enter at least 10 numbers" />
+                  <div class="validate"></div>
+                </div>
+                       </div>                      
+                  <div class="form-group-append"><button type="submit">One Odd out</button></div>
+
+            <div class="d-inline-flex p-2">
+
+        <div class="alert alert-success" role="alert">
+          <p>SG One odd out for the given query <a href="#" class="alert-link">{{sentence}}</a></p>
+                {% if result %}
+              {{ result }}
+               {% endif %} 
+  </div>
+     </div>
+
+                  </form>    
+
+</div>
+            
+            
+               
+ <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
+
+      
+           
+
+     
+ <form  action="/disimilarft" method='post' method="post" role="form" class="form">
+           <div class="form-group col-md-8">
+                  <label for="sentences">Enter words</label>
+                  <input type="text" name="sentenced" class="form-control" id="sentenced" data-rule="minlen:10" data-msg="Please enter at least 10 numbers" />
+                  <div class="validate"></div>
+                </div>
+               
+                  <div class="form-group-append"><button type="submit">One Odd out</button></div>
+<div class="d-inline-flex p-2">
+
+        <div class="alert alert-success" role="alert">
+          <p>SW One odd out for the given query <a href="#" class="alert-link">{{sentenced}}</a></p>
+                {% if resultd %}
+              {{ resultd|safe }}
+               {% endif %}         
+ </div>
+     </div>
+            </form>  
+  
+          </div>
+          
+                  
+
+        </div>
+    
+
+      </div>
+    </section><!-- End Contact Section -->
+{% endblock %}
+
